@@ -28,8 +28,7 @@ fn main() {
         let exit_code: char = user_input.chars().take(1).last().unwrap();
         
         match exit_code as u8 {
-            88 => break 'app_main_loop,
-            120 => break 'app_main_loop,
+            88 | 120  => break 'app_main_loop,
             _ => ()
         };
         
