@@ -28,9 +28,8 @@ fn main() {
         io::stdin().read_line(&mut user_input).expect("Err reading your input");
         
         let user_input: char = user_input.chars().take(1).last().unwrap();
-        match user_input as u8 {
-            88 | 120  => break 'app_main_loop,
-            _ => ()
+        if let 80 | 120 = user_input as u8  {
+                break 'app_main_loop; 
         };
         
 
